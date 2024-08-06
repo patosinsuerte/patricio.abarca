@@ -73,6 +73,7 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
+    pointer-events: none;
     -webkit-user-select: none; /* Chrome, Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */

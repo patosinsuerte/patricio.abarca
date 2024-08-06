@@ -33,6 +33,11 @@
 .touch__icon {
     width: 60px;
     height: 60px;
+    pointer-events: none;
+    -webkit-user-select: none; /* Chrome, Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Opera */
 }
 
 .touch__body {
@@ -71,6 +76,7 @@
     border: none;
     text-align: center;
     // border-radius: 8px;
+    cursor: pointer;
     @media screen and (min-width: 800px) {
         &:hover {
             background-color: var(--hover-bg-color);
@@ -83,4 +89,9 @@
     height: 21px;
     filter: invert(1);
     cursor: pointer;
+    pointer-events: none;
+    -webkit-user-select: none; /* Chrome, Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Opera */
 }

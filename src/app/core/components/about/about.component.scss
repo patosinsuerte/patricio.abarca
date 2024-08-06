@@ -122,6 +122,7 @@
     color: var(--white-bg);
     letter-spacing: 1px;
     font-weight: 600;
+    cursor: pointer;
     @media screen and (min-width: 800px) {
         &:hover {
             cursor: pointer;

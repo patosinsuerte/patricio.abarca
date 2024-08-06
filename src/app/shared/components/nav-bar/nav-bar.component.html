@@ -32,5 +32,9 @@
                 [ngClass]="{'lateral__link--active': currentColor == 5}">CONTACTO</a>
         </li>
     </ul>
-    <img src="../assets/icons/header/x.svg" alt="X" class="lateral__x" (click)="onCloseClick(); onDesactiveOpacity()">
+    <div class="lateal-x-container">
+        <img src="../assets/icons/header/x.svg" alt="X" class="lateral__x" draggable="false" loading="lazy"
+            (click)="onCloseClick(); onDesactiveOpacity()">
+    </div>
+
 </nav>
