@@ -24,27 +24,20 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
-                      "outputPath": "dist/v3-portfolio",
-                      "index": "src/index.html",
-                      "browser": "src/main.ts",
-                      "polyfills": [
-                        "zone.js"
-                      ],
-                      "tsConfig": "tsconfig.app.json",
-                      "inlineStyleLanguage": "scss",
-                      "assets": [
-                        "src/favicon.ico",
-                        "src/assets"
-                      ],
-                      "styles": [
-                        "src/styles.scss"
-                      ],
-                      "scripts": [],
-                      "server": "src/main.server.ts",
-                      "prerender": true,
-                      "ssr": {
-                        "entry": "server.ts"
-                      }
+                        "outputPath": "dist/v3-portfolio",
+                        "index": "src/index.html",
+                        "browser": "src/main.ts",
+                        "polyfills": ["zone.js"],
+                        "tsConfig": "tsconfig.app.json",
+                        "inlineStyleLanguage": "scss",
+                        "assets": ["src/favicon.ico", "src/assets"],
+                        "styles": ["src/styles.scss"],
+                        "scripts": [],
+                        "server": "src/main.server.ts",
+                        "prerender": true,
+                        "ssr": {
+                            "entry": "server.ts"
+                        }
                     },
                     "configurations": {
                         "production": {
@@ -100,7 +93,7 @@
                     }
                 },
                 "deploy": {
-                  "builder": "angular-cli-ghpages:deploy"
+                    "builder": "angular-cli-ghpages:deploy"
                 }
             }
         }

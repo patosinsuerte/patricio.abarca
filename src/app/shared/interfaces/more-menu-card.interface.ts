@@ -1,11 +1,10 @@
 export interface MoreMenuCard {
     title: string;
     subtitle: string;
-    img: string;
-    altText: string;
+    img: string | null;
+    altText: string | null;
     text: string;
-    demoHref: string;
-    repoHref: string;
+
     showLinks: boolean;
     showClose: boolean;
 }

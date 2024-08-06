@@ -133,6 +133,11 @@
 .technologies__icon {
     width: 35px;
     height: 35px;
+    pointer-events: none;
+    -webkit-user-select: none; /* Chrome, Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Opera */
 }
 
 // timeline
@@ -146,7 +151,7 @@
     flex-direction: column;
     gap: 2em;
     @media screen and (min-width: 800px) {
-        height: 800px;
+        height: 900px;
     }
 }
 

@@ -30,6 +30,11 @@
 img {
     max-width: 100%;
     display: block;
+    pointer-events: none;
+    cursor-webkit-user-select: none; /* Chrome, Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Opera */
 }
 
 .gallery {
@@ -101,6 +106,11 @@ img {
 .techs {
     display: flex;
     gap: 0.5em;
+    pointer-events: none;
+    cursor-webkit-user-select: none; /* Chrome, Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Opera */
 }
 
 .techs-container {

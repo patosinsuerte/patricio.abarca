@@ -146,6 +146,11 @@
     width: 230px;
     height: 230px;
     border-radius: 50%;
+    pointer-events: none;
+    cursor-webkit-user-select: none; /* Chrome, Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Opera */
     @media screen and (min-width: 900px) {
         width: 350px;
         height: 350px;

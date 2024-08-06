@@ -74,6 +74,11 @@
 .card__icon {
     width: 30px;
     height: 30px;
+    pointer-events: none;
+    -webkit-user-select: none; /* Chrome, Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Opera */
 }
 
 .card__icon--filter {
@@ -89,12 +94,17 @@
         font-size: 1.5rem;
     }
 }
+// .card__body {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
 
 .card__text {
     font-size: 1rem;
     color: var(--light-black);
     // font-size: 1.2rem;
     font-weight: var(--fw-med);
-    text-align: center;
     line-height: 1.5;
+    text-align: center;
 }

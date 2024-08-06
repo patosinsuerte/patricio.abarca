@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
       this.metaService.updateTag({ name: 'author', content: 'Patricio Abarca' });
       this.metaService.updateTag({ property: 'og:title', content: this.defaultTitle });
       this.metaService.updateTag({ property: 'og:description', content: 'Portfolio de Patricio Abarca, desarrollador web con experiencia en backend, frontend y soluciones en la nube.' });
-      this.metaService.updateTag({ property: 'og:url', content: 'URL-de-tu-sitio-web' }); // Actualiza con la URL de tu sitio web
+      // this.metaService.updateTag({ property: 'og:url', content: 'URL-de-tu-sitio-web' }); // Actualiza con la URL de tu sitio web
 
       // Configurar desplazamiento inicial
       window.scrollTo(0, 0);
