@@ -1,0 +1,53 @@
+<!-- <div class="more-menu" [ngClass]="{'more-menu--active': isMoreMenuOpen}">
+    <div class="overlay overlay--active"></div>
+    <div class="card">
+        <img src="../assets/icons/header/x.svg" alt="" class="card__x" (click)="onCloseMoreMenu()">
+        <div class="card__header">
+            <h2>Coding Dojo/ Forge FOundation</h2>
+            <p>Programa tu futuro + Java</p>
+        </div>
+        <div class="card__body">
+            <div class="card__image">
+                <img src="./assets/images/more/certificado-coding-dojo.webp" alt="imgage" class="card__img">
+            </div>
+            <div class="card__texts">
+                <p class="card__text"> El Programa “Tu Futuro + Java Full/Stack”, buscan preparar a nuevos
+                    talentos para carreras en tecnología, posibilitando que jóvenes económicamente vulnerables puedan
+                    accedan a una vida de calidad a través de un buen trabajo y el aprendizaje continuo.</p>
+            </div>
+        </div>
+        <div class="card__buttons">
+            <button class="card__button">WEB</button>
+            <button class="card__button">Repositorio</button>
+        </div>
+    </div>
+</div> -->
+
+
+
+<div class="more-menu" [ngClass]="{'more-menu--active': isMoreMenuOpen}">
+    <div class="overlay overlay--active"></div>
+    <div class="card">
+        <img src="../assets/icons/header/x.svg" alt="" class="card__x" (click)="onCloseMoreMenu()">
+        <div class="card__header">
+            <h2 class="card__title">{{menuContent?.title}}</h2>
+            <p class="card__subtitle">{{menuContent?.subtitle}}</p>
+        </div>
+        <div class="card__body">
+            <div class="card__image">
+                <img [src]="menuContent?.img" alt="imgage" class="card__img">
+            </div>
+            <div class="card__texts">
+                <p class="card__text">{{menuContent?.text}}</p>
+            </div>
+        </div>
+        <div class="card__buttons">
+            <a [href]="menuContent?.demoHref" class="card__button card__button--link"
+                *ngIf="menuContent?.showLinks">WEB</a>
+            <a [href]="menuContent?.repoHref" class="card__button card__button--link"
+                *ngIf="menuContent?.showLinks">REPO</a>
+            <button class="card__button card__button--close" *ngIf="menuContent?.showClose"
+                (click)="onCloseMoreMenu()">CERRAR</button>
+        </div>
+    </div>
+</div>

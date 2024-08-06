@@ -1,0 +1,39 @@
+<header class="header">
+    <div class="header__icon" (click)="scrollTo('hero')">
+        <img src="../assets/icons/header/pa.svg" alt="" class="header__logo">
+    </div>
+    <img src="../assets/icons/header/menu.svg" alt="menu" class="header__hamburguer"
+        (click)="onMenuClick(); onOpacityClick()">
+
+    <nav class="nav">
+        <ul class="menu">
+            <li class="menu__item">
+                <a class="menu__link" (click)="change(0, 'hero')"
+                    [ngClass]="{'menu__link--active': currentSection == 0}">INICIO</a>
+            </li>
+            <li class=" menu__item">
+                <a class="menu__link" (click)="change(1, 'about')"
+                    [ngClass]="{'menu__link--active': currentSection == 1}">QUIEN
+                    SOY</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" (click)="change(2, 'services')"
+                    [ngClass]="{'menu__link--active': currentSection == 2}">MIS
+                    SERVICIOS</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" (click)="change(3, 'experience')"
+                    [ngClass]="{'menu__link--active': currentSection == 3}">EXPERIENCIA</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" (click)="change(4, 'projects')"
+                    [ngClass]="{'menu__link--active': currentSection == 4}">PROYECTOS</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" (click)="change(5, 'contact')"
+                    [ngClass]="{'menu__link--active': currentSection == 5}">CONTACTO</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<shared-nav-bar class="navBar"></shared-nav-bar>

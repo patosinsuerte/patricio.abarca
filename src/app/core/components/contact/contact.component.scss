@@ -1,0 +1,86 @@
+@use "../../../shared/scss/mixins" as m;
+
+.contact {
+    padding: 5em;
+    background-color: var(--grey-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    min-width: var(--min-width-size);
+}
+
+.contact__titles {
+    margin-top: var(--em-ultraxl);
+}
+
+.contact__title {
+    @include m.titleStyle(var(--medium-black));
+}
+.contact__title--dot {
+    @include m.dotStyle();
+}
+
+.touch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.touch__icon {
+    width: 60px;
+    height: 60px;
+}
+
+.touch__body {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    text-align: center;
+}
+.touch__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.touch__title {
+    color: var(--medium-black);
+    font-weight: 300;
+}
+.touch__text {
+    color: var(--light-black);
+}
+
+.touch__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.touch__button {
+    display: block;
+    background-color: var(--primary-color);
+    padding: var(--em-normal);
+    color: var(--white-bg);
+    font-weight: 500;
+    border: none;
+    text-align: center;
+    // border-radius: 8px;
+    @media screen and (min-width: 800px) {
+        &:hover {
+            background-color: var(--hover-bg-color);
+            cursor: pointer;
+        }
+    }
+}
+.touch__clipboard {
+    width: 21px;
+    height: 21px;
+    filter: invert(1);
+    cursor: pointer;
+}

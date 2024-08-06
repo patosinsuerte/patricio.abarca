@@ -1,0 +1,109 @@
+@use "../../../shared/scss/mixins" as m;
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-left: var(--em-big);
+    padding-right: var(--em-big);
+    background-color: var(--white-bg);
+    min-width: var(--min-width-size);
+    width: 100%;
+    padding: 3em;
+}
+
+.projects__titles {
+    margin-top: var(--em-ultra);
+}
+
+.projects__title {
+    @include m.titleStyle(var(--medium-black));
+    @media screen and (max-width: 800px) {
+        text-align: center;
+    }
+}
+
+.projects__title--dot {
+    @include m.dotStyle;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.gallery {
+    columns: 3 200px;
+    column-gap: var(--em-normal);
+}
+
+.card {
+    display: inline-block;
+    background-color: var(--white-bg);
+    padding: var(--em-medium);
+    margin-bottom: var(--em-normal);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card__header {
+    margin-bottom: var(--em-medium);
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--em-medium);
+}
+
+.card__texts {
+    display: flex;
+    flex-direction: column;
+    gap: var(--em-normal);
+}
+
+.card__title {
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-med);
+    color: var(--medium-black);
+}
+
+.card__text {
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-min);
+    color: var(--light-black);
+    line-height: 1.5;
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+.card__button {
+    padding: 0.5em;
+    background-color: var(--primary-color);
+    border: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    width: 100px;
+    text-align: center;
+    color: var(--white-bg);
+    @media screen and (min-width: 800px) {
+        &:hover {
+            cursor: pointer;
+            background-color: var(--hover-bg-color);
+        }
+    }
+}
+
+.techs {
+    display: flex;
+    gap: 0.5em;
+}
+
+.techs-container {
+    width: 25px;
+    height: 25px;
+}

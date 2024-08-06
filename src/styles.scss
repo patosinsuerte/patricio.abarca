@@ -1,0 +1,75 @@
+// @font-face {
+//     font-family: "Poppins";
+//     src: url(/fonts/Poppins/Poppins-Regular.ttf);
+// }
+// @font-face {
+//     font-family: "Roboto";
+//     src: url(/fonts/Roboto/Roboto-Regular.ttf);
+// }
+:root {
+    --font-roboto: "Roboto", sans-serif;
+    --primary-color: #37365a;
+    --secondary-color: #8683d3;
+    // --secondary-color: #7776b1;
+    --white-bg: #ffffff;
+    --grey-text-color: #ccced0;
+    --time-line-card-bg-color: #242525;
+    --min-width-size: 360px;
+    --dark-black: #000;
+    --light-black: #333;
+    --medium-black: #0e0e0e;
+    --hover-bg-color: #2d2c50;
+    --grey-bg: #f0f0f0;
+
+    // em
+    --em-normal: 1em;
+    --em-medium: 2em;
+    --em-medium-xl: 2.5;
+    --em-big: 3em;
+    --em-ultra: 4em;
+    --em-ultraxl: 5em;
+
+    // fonts weight
+    --fw-min: 300;
+    --fw-med: 400;
+    --fw-big: 500;
+    --fw-ultra: 600;
+
+    // fonts sizes
+    --fs-normal: 1rem;
+    --fs-medium: 1.2rem;
+    --fs-big: 1.5rem;
+    --fs-ultra: 2rem;
+    --fs-ultra-min: 2.1rem;
+    --fs-ultra-medium: 2.5rem;
+    --fs-ultra-xl: 3rem;
+}
+
+// mixins
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    // font-family: var(--font-poppins);
+    font-family: "Roboto", sans-serif;
+}

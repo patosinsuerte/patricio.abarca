@@ -1,0 +1,11 @@
+@mixin dotStyle {
+    font-size: var(--fs-ultra-xl);
+    color: var(--primary-color);
+    font-weight: var(--fw-ultra);
+}
+
+@mixin titleStyle($color) {
+    font-size: var(--fs-ultra-min);
+    font-weight: var(--fw-min);
+    color: $color;
+}

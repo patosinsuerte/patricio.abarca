@@ -1,0 +1,36 @@
+<div class="menu-opacity" [ngClass]="{'menu-opacity--active': isOpacityActive}"></div>
+<nav class="lateral" [ngClass]="{'lateral--active': isNavBarOpen, 'lateral--desactive': !isNavBarOpen}">
+    <ul class="lateral__menu">
+        <li class="lateral__item">
+            <a class="lateral__link" (click)="onCloseClick();onDesactiveOpacity();onChangeCurrentMenuColor(0,'hero')"
+                [ngClass]="{'lateral__link--active': currentColor == 0}">INICIO</a>
+        </li>
+        <li class="lateral__item">
+            <a class="lateral__link" (click)="onCloseClick();onDesactiveOpacity();onChangeCurrentMenuColor(1, 'about')"
+                [ngClass]="{'lateral__link--active': currentColor == 1}">QUIEN SOY</a>
+        </li>
+        <li class="menu__item">
+            <a class="lateral__link"
+                (click)="onCloseClick();onDesactiveOpacity();onChangeCurrentMenuColor(2, 'services')"
+                [ngClass]="{'lateral__link--active': currentColor == 2}">MIS SERVICIOS</a>
+        </li>
+        <li class=" lateral__item">
+            <a class="lateral__link"
+                (click)="onCloseClick();onDesactiveOpacity();onChangeCurrentMenuColor(3, 'experience')"
+                [ngClass]="{'lateral__link--active': currentColor == 3}">EXPERIENCIA</a>
+        </li>
+
+        <li class=" lateral__item">
+            <a class="lateral__link"
+                (click)="onCloseClick();onDesactiveOpacity();onChangeCurrentMenuColor(4, 'projects')"
+                [ngClass]="{'lateral__link--active': currentColor == 4}">PROYECTOS</a>
+        </li>
+
+        <li class="lateral__item">
+            <a class="lateral__link"
+                (click)="onCloseClick();onDesactiveOpacity();onChangeCurrentMenuColor(5, 'contact')"
+                [ngClass]="{'lateral__link--active': currentColor == 5}">CONTACTO</a>
+        </li>
+    </ul>
+    <img src="../assets/icons/header/x.svg" alt="X" class="lateral__x" (click)="onCloseClick(); onDesactiveOpacity()">
+</nav>
