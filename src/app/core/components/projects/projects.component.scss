@@ -38,12 +38,16 @@ img {
 }
 
 .gallery {
-    columns: 3 200px;
-    column-gap: var(--em-normal);
+    display: flex;
+    // columns: 2 200px;
+    // column-gap: var(--em-normal);
+    gap: 2em;
 }
 
 .card {
-    display: inline-block;
+    // display: inline-block;
+    width: 350px;
+
     background-color: var(--white-bg);
     padding: var(--em-medium);
     margin-bottom: var(--em-normal);

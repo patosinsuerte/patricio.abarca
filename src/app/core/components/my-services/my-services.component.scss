@@ -101,11 +101,11 @@
         font-size: 1.5rem;
     }
 }
-// .card__body {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+.card__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .card__text {
     font-size: 1rem;
@@ -114,4 +114,5 @@
     font-weight: var(--fw-med);
     line-height: 1.5;
     text-align: center;
+    width: 500px;
 }

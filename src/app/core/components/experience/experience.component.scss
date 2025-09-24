@@ -146,12 +146,13 @@
     width: 100%;
     position: relative;
     max-width: 1080px;
+
     margin: 50px auto;
     display: flex;
     flex-direction: column;
     gap: 2em;
     @media screen and (min-width: 800px) {
-        height: 900px;
+        height: 600px;
     }
 }
 
@@ -368,5 +369,5 @@
 //     background-color: #f8bf11;
 // }
 .technologies__icon-container--cassandra {
-    background-color: #97bbc7;
+    background-color: #fff;
 }
