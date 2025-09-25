@@ -91,12 +91,13 @@ img {
     margin-top: 2em;
 }
 .card__button {
-    padding: 0.5em;
+    padding: 0.8em;
     background-color: var(--primary-color);
     border: none;
     font-weight: 500;
     font-size: 0.9rem;
     width: 100px;
+    border-radius: 10px;
     text-align: center;
     color: var(--white-bg);
     @media screen and (min-width: 800px) {

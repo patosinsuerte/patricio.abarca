@@ -309,6 +309,7 @@
     color: var(--white-bg);
     font-weight: 600;
     cursor: pointer;
+    border-radius: 10px;
     @media screen and (min-width: 800px) {
         &:hover {
             cursor: pointer;
