@@ -5,14 +5,6 @@ import { ColorHeaderService } from '../../../shared/services/color-header.servic
     selector: 'core-hero',
     templateUrl: './hero.component.html',
     styleUrl: './hero.component.scss',
-    standalone: false
+    standalone: false,
 })
-export class HeroComponent {
-
-
-
-
-
-
-
-}
+export class HeroComponent {}

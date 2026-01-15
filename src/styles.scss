@@ -1,10 +1,50 @@
-// @font-face {
-//     font-family: "Poppins";
-//     src: url(/fonts/Poppins/Poppins-Regular.ttf);
-// }
+@font-face {
+    font-family: "Zen Kaku Gothic New";
+    src: url("assets/fonts/zen/ZenKakuGothicNew-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; /* Muy recomendable */
+}
+
+@font-face {
+    font-family: "Zen Kaku Gothic New";
+    src: url("assets/fonts/zen/ZenKakuGothicNew-Bold.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; /* Muy recomendable */
+}
+
+@font-face {
+    font-family: "Zen Kaku Gothic New";
+    src: url("assets/fonts/zen/ZenKakuGothicNew-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap; /* Muy recomendable */
+}
+
+@font-face {
+    font-family: "Zen Kaku Gothic New";
+    src: url("assets/fonts/zen/ZenKakuGothicNew-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap; /* Muy recomendable */
+}
+
+@font-face {
+    font-family: "Zen Kaku Gothic New";
+    src: url("assets/fonts/zen/ZenKakuGothicNew-Bold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap; /* Muy recomendable */
+}
+
 // @font-face {
 //     font-family: "Roboto";
-//     src: url(/fonts/Roboto/Roboto-Regular.ttf);
+//     src: url("assets/fonts/Roboto-Italic.woff2") format("woff2");
+//     font-weight: 400;
+//     font-style: italic;
+// }
+
 // }
 :root {
     --font-roboto: "Roboto", sans-serif;

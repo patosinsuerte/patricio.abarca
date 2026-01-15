@@ -2,7 +2,8 @@
 
 .box {
     height: auto;
-    min-height: 780px;
+    // min-height: 780px;
+    min-height: 500px;
     max-width: 100%;
     padding: var(--em-normal);
     min-width: var(--min-width-size);
@@ -23,7 +24,11 @@
 }
 
 .about__title-text {
-    @include m.titleStyle(var(--medium-black));
+    // @include m.titleStyle(var(--medium-black));
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: #000;
     @media screen and (max-width: 800px) {
         text-align: center;
     }
@@ -31,7 +36,10 @@
 
 //* utility classes
 .about__title-text--secondary {
-    @include m.dotStyle();
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    color: #000;
 }
 
 //* MAIN BODY -> CONTAIN TWO DIV'S -> INFORMATION TEXT AND PHOTO CONTAINER
@@ -52,7 +60,7 @@
 .information__texts {
     display: flex;
     flex-direction: column;
-    gap: var(--em-medium);
+    gap: 1em;
 }
 
 //*information titles
@@ -65,15 +73,10 @@
 
 // font
 .information__title {
-    font-size: var(--fs-medium);
-    font-weight: var(--fw-med);
-    color: var(--dark-black);
-}
-
-.information__subtitle {
-    font-weight: var(--fs-medium);
-    font-weight: var(--fw-med);
-    color: var(--dark-black);
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #000;
 }
 
 .information__body {
@@ -96,13 +99,12 @@
 }
 
 .information__description-text {
-    font-size: var(--fs-normal);
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #000;
     line-height: 1.5;
     max-width: 650px;
-    color: var(--light-black);
-    // font-size: 1.2rem;
-    font-weight: var(--fw-med);
-    letter-spacing: 1px;
 }
 
 .information__description-buttons {
@@ -116,18 +118,20 @@
 .information__description-button {
     padding: 1em;
     width: 90px;
-    background-color: var(--primary-color);
+    background-color: #000;
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 5px;
     color: var(--white-bg);
-    letter-spacing: 1px;
-    font-weight: 600;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 800;
+    font-size: 0.9em;
+
     cursor: pointer;
     @media screen and (min-width: 800px) {
         &:hover {
             cursor: pointer;
-            background-color: var(--hover-bg-color);
+            background-color: #222;
         }
     }
 }
@@ -154,8 +158,8 @@
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently supported by Opera */
     @media screen and (min-width: 900px) {
-        width: 350px;
-        height: 350px;
+        width: 320px;
+        height: 320px;
     }
 }
 
@@ -173,6 +177,6 @@
 }
 
 .icon__svg--lk {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
 }
