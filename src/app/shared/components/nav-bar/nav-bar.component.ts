@@ -3,9 +3,10 @@ import { NavBarControlService } from '../../services/nav-bar-control.service';
 import { ColorHeaderService } from '../../services/color-header.service';
 
 @Component({
-  selector: 'shared-nav-bar',
-  templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.scss'
+    selector: 'shared-nav-bar',
+    templateUrl: './nav-bar.component.html',
+    styleUrl: './nav-bar.component.scss',
+    standalone: false
 })
 export class NavBarComponent implements OnInit {
   public isNavBarOpen = false;

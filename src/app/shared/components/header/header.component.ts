@@ -3,9 +3,10 @@ import { NavBarControlService } from '../../services/nav-bar-control.service';
 import { ColorHeaderService } from '../../services/color-header.service';
 
 @Component({
-  selector: 'shared-header',
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+    selector: 'shared-header',
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.scss',
+    standalone: false
 })
 export class HeaderComponent implements OnInit {
 

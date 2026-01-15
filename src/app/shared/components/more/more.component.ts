@@ -5,9 +5,10 @@ import { ExperienceCard } from '../../../core/interfaces/experience-card.interfa
 import { MoreMenuCard } from '../../interfaces/more-menu-card.interface';
 
 @Component({
-  selector: 'shared-more',
-  templateUrl: './more.component.html',
-  styleUrl: './more.component.scss'
+    selector: 'shared-more',
+    templateUrl: './more.component.html',
+    styleUrl: './more.component.scss',
+    standalone: false
 })
 export class MoreComponent implements OnInit {
 

@@ -3,9 +3,10 @@ import { Component, inject, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    standalone: false
 })
 export class AppComponent implements OnInit {
   private defaultTitle = 'Patricio Abarca - Desarrollador web';
