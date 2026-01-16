@@ -9,6 +9,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ProjectExampleComponent } from './components/project-example/project-example.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { MyContactComponent } from './components/my-contact/my-contact.component';
 
 
 
@@ -21,7 +23,9 @@ import { ProjectExampleComponent } from './components/project-example/project-ex
     ProjectsComponent,
     ContactComponent,
     ExperienceComponent,
-    ProjectExampleComponent
+    ProjectExampleComponent,
+    FaqComponent,
+    MyContactComponent
   ],
   imports: [
     CommonModule, SharedModule

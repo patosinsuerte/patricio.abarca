@@ -1,0 +1,62 @@
+.box {
+    padding: 3em;
+}
+
+.faq__titles {
+    margin-bottom: 1em;
+}
+
+.faq__title {
+    color: #000;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    @media screen and (max-width: 800px) {
+        text-align: center;
+    }
+}
+
+.element__question {
+    color: #000;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+// faq
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+}
+
+.element__content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgb(51, 51, 51, 0.2) 1px solid;
+    padding-bottom: 0em;
+    cursor: pointer;
+    transition: border-bottom 0.2s ease;
+}
+.element__content--open {
+    border-bottom: none;
+}
+
+.element__button {
+    color: #000;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 800;
+    font-size: 2.1em;
+}
+
+.element__answer {
+    color: #000;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}

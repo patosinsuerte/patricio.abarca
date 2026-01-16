@@ -1,0 +1,32 @@
+<section class="faq box" id="faq">
+    <div class="faq__titles">
+        <h1 class="faq__title">
+            FAQ
+            <span class="faq__title faq__title--dot">.</span>
+        </h1>
+    </div>
+
+    <div class="container">
+        @for (faq of faqs; track $index; let i = $index) {
+
+        <div class="element">
+            <div
+                class="element__content"
+                (click)="toggle(i)"
+                [ngClass]="{ 'element__content--open': faq.open }"
+            >
+                <h2 class="element__question">{{ faq.question }}</h2>
+
+                <p class="element__button">{{ faq.open ? "−" : "+" }}</p>
+            </div>
+
+            @if (faq.open) {
+            <div class="element__plus">
+                <p class="element__answer">{{ faq.answer }}</p>
+            </div>
+            }
+        </div>
+
+        }
+    </div>
+</section>

@@ -44,16 +44,20 @@
                     >MIS SERVICIOS</a
                 >
             </li>
-            <!-- <li class="menu__item">
-                <a class="menu__link" (click)="change(3, 'experience')"
-                    [ngClass]="{'menu__link--active': currentSection == 3}">EXPERIENCIA</a>
-            </li> -->
             <li class="menu__item">
                 <a
                     class="menu__link"
-                    (click)="change(4, 'projects')"
-                    [ngClass]="{ 'menu__link--active': currentSection == 4 }"
+                    (click)="change(3, 'project')"
+                    [ngClass]="{ 'menu__link--active': currentSection == 3 }"
                     >PROYECTOS</a
+                >
+            </li>
+            <li class="menu__item">
+                <a
+                    class="menu__link"
+                    (click)="change(4, 'faq')"
+                    [ngClass]="{ 'menu__link--active': currentSection == 4 }"
+                    >FAQ</a
                 >
             </li>
             <li class="menu__item">
