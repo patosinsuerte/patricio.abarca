@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { ProjectExampleComponent } from './components/project-example/project-example.component';
 
 
 
@@ -19,7 +20,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     MyServicesComponent,
     ProjectsComponent,
     ContactComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ProjectExampleComponent
   ],
   imports: [
     CommonModule, SharedModule

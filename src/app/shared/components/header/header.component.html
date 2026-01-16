@@ -1,40 +1,68 @@
 <header class="header">
     <div class="header__icon" (click)="scrollTo('hero')">
-        <img src="../assets/icons/header/pa.svg" alt="PA logo" class="header__logo" draggable="false" loading="lazy">
+        <img
+            src="../assets/icons/header/pa.svg"
+            alt="PA logo"
+            class="header__logo"
+            draggable="false"
+            loading="lazy"
+        />
     </div>
     <div class="header__icon" (click)="onMenuClick(); onOpacityClick()">
-        <img src="../assets/icons/header/menu.svg" alt="Menu" class="header__hamburguer" loading="lazy"
-            draggable="false">
+        <img
+            src="../assets/icons/header/menu.svg"
+            alt="Menu"
+            class="header__hamburguer"
+            loading="lazy"
+            draggable="false"
+        />
     </div>
-
 
     <nav class="nav">
         <ul class="menu">
             <li class="menu__item">
-                <a class="menu__link" (click)="change(0, 'hero')"
-                    [ngClass]="{'menu__link--active': currentSection == 0}">INICIO</a>
-            </li>
-            <li class=" menu__item">
-                <a class="menu__link" (click)="change(1, 'about')"
-                    [ngClass]="{'menu__link--active': currentSection == 1}">QUIEN
-                    SOY</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" (click)="change(2, 'services')"
-                    [ngClass]="{'menu__link--active': currentSection == 2}">MIS
-                    SERVICIOS</a>
+                <a
+                    class="menu__link"
+                    (click)="change(0, 'hero')"
+                    [ngClass]="{ 'menu__link--active': currentSection == 0 }"
+                    >INICIO</a
+                >
             </li>
             <li class="menu__item">
+                <a
+                    class="menu__link"
+                    (click)="change(1, 'about')"
+                    [ngClass]="{ 'menu__link--active': currentSection == 1 }"
+                    >QUIEN SOY</a
+                >
+            </li>
+            <li class="menu__item">
+                <a
+                    class="menu__link"
+                    (click)="change(2, 'services')"
+                    [ngClass]="{ 'menu__link--active': currentSection == 2 }"
+                    >MIS SERVICIOS</a
+                >
+            </li>
+            <!-- <li class="menu__item">
                 <a class="menu__link" (click)="change(3, 'experience')"
                     [ngClass]="{'menu__link--active': currentSection == 3}">EXPERIENCIA</a>
+            </li> -->
+            <li class="menu__item">
+                <a
+                    class="menu__link"
+                    (click)="change(4, 'projects')"
+                    [ngClass]="{ 'menu__link--active': currentSection == 4 }"
+                    >PROYECTOS</a
+                >
             </li>
             <li class="menu__item">
-                <a class="menu__link" (click)="change(4, 'projects')"
-                    [ngClass]="{'menu__link--active': currentSection == 4}">PROYECTOS</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" (click)="change(5, 'contact')"
-                    [ngClass]="{'menu__link--active': currentSection == 5}">CONTACTO</a>
+                <a
+                    class="menu__link"
+                    (click)="change(5, 'contact')"
+                    [ngClass]="{ 'menu__link--active': currentSection == 5 }"
+                    >CONTACTO</a
+                >
             </li>
         </ul>
     </nav>
