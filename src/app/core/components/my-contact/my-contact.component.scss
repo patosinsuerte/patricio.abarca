@@ -1,6 +1,6 @@
 .box {
     padding: 3em;
-    height: 600px;
+    height: 750px;
 }
 
 .contact__titles {
@@ -56,12 +56,15 @@
 .email__link {
     display: block;
     background-color: #000;
-    padding: var(--em-normal);
+    padding: 0.5em;
     color: var(--white-bg);
+    font-family: "Zen Kaku Gothic New", sans-serif;
     font-weight: 500;
+    font-size: 1.3em;
     border: none;
     border-radius: 5px;
     text-align: center;
+    width: 150px;
     // border-radius: 8px;
     cursor: pointer;
     @media screen and (min-width: 800px) {
@@ -124,4 +127,19 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+.email__text {
+    color: #000;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    width: 350px;
+}
+
+.email__title {
+    color: #000;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 800;
+    font-size: 1.5em;
 }
