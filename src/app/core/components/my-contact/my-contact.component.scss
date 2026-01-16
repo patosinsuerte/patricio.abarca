@@ -1,5 +1,6 @@
 .box {
     padding: 3em;
+    height: 600px;
 }
 
 .contact__titles {
@@ -30,6 +31,19 @@
     gap: 1em;
 }
 
+.email__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.email__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
 .email__image {
     width: 40px;
     height: 40px;
@@ -38,4 +52,76 @@
 .email__clipboard {
     width: 40px;
     height: 40px;
+}
+.email__link {
+    display: block;
+    background-color: #000;
+    padding: var(--em-normal);
+    color: var(--white-bg);
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    // border-radius: 8px;
+    cursor: pointer;
+    @media screen and (min-width: 800px) {
+        &:hover {
+            background-color: #222;
+            cursor: pointer;
+        }
+    }
+}
+
+.email,
+.card {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 1.8rem;
+    box-shadow:
+        0 3px 5px rgba(0, 0, 0, 0.03),
+        0 1px 2px rgba(0, 0, 0, 0.02);
+    transition:
+        box-shadow 0.35s ease,
+        transform 0.35s ease;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.icon__svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.icon__svg--lk {
+    width: 40px;
+    height: 40px;
+}
+
+.icon__svg--ig {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        flex-direction: column;
+        gap: 3em;
+        justify-content: center;
+        align-items: center;
+    }
 }
