@@ -26,7 +26,8 @@
             } -->
                 @if (faq.open) {
                     <div class="element__plus element__plus--open">
-                        <p class="element__answer">{{ faq.answer }}</p>
+                        <!-- <p class="element__answer">{{ faq.answer }}</p> -->
+                        <p class="element__answer" [innerHTML]="faq.answer"></p>
                     </div>
                 }
             </div>

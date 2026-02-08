@@ -16,15 +16,43 @@
     }
 }
 
+// .grid {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     gap: 0; /* sin separación */
+// }
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0; /* sin separación */
+    gap: 0;
 }
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+// .item {
+//     position: relative;
+//     overflow: hidden;
+// }
 
 .item {
     position: relative;
     overflow: hidden;
+    display: block;
+    text-decoration: none; /* quita subrayado */
+    cursor: pointer;
 }
 
 .item img {
@@ -42,8 +70,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 1.2rem;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #fff;
     background: rgba(0, 0, 0, 0.4);
     opacity: 0;
     transition: opacity 0.4s ease;
@@ -56,4 +86,26 @@
 
 .item:hover span {
     opacity: 1;
+}
+//asdada
+/* Estilos hover solo para dispositivos que soportan hover */
+@media (hover: hover) and (pointer: fine) {
+    .item:hover img {
+        filter: grayscale(100%);
+    }
+
+    .item:hover span {
+        opacity: 1;
+    }
+}
+
+/* Móvil / touch devices: desactivar hover */
+@media (hover: none) and (pointer: coarse) {
+    .item img {
+        filter: none !important;
+    }
+
+    .item span {
+        opacity: 0 !important;
+    }
 }
